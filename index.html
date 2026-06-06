@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MotionHQ — Run Your Entire Gym From One Platform</title>
+  <meta name="description"
+    content="MotionHQ is the all-in-one gym management platform. Manage members, attendance, billing, trainers, classes, and analytics from a single dashboard." />
+  <meta property="og:title" content="MotionHQ — Run Your Entire Gym From One Platform" />
+  <meta property="og:description"
+    content="All-in-one gym management: members, attendance, billing, trainers, classes, and analytics." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Ambient background glow -->
+  <div class="bg-aurora" aria-hidden="true">
+    <div class="aurora a1"></div>
+    <div class="aurora a2"></div>
+    <div class="aurora a3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="MotionHQ home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <defs>
+              <linearGradient id="bg1" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#7C3AED" />
+                <stop offset="1" stop-color="#06B6D4" />
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="28" height="28" rx="8" fill="url(#bg1)" />
+            <path d="M8 22V10l4 6 4-6 4 6 4-6v12" stroke="white" stroke-width="2.2" stroke-linecap="round"
+              stroke-linejoin="round" fill="none" />
+          </svg>
+        </span>
+        <span class="brand-name">MotionHQ</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#" class="link-muted">Login</a>
+        <a href="#cta" class="btn btn-primary btn-sm">Start Free Trial</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile" hidden>
+      <a href="#features">Features</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#" class="link-muted">Login</a>
+      <a href="#cta" class="btn btn-primary">Start Free Trial</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">
+              <span class="dot"></span> Built for modern gyms &amp; studios
+            </span>
+            <h1 class="h1">
+              Run Your Entire Gym <br />
+              From <span class="gradient-text">One Platform</span>
+            </h1>
+            <p class="lead">
+              Manage members, attendance, billing, trainers, classes, and analytics &mdash; without spreadsheets or
+              manual work.
+            </p>
+            <div class="hero-ctas">
+              <a href="#cta" class="btn btn-primary">
+                Start Free Trial
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+              <a href="#cta" class="btn btn-ghost">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M8 5v14l11-7-11-7z" fill="currentColor" />
+                </svg>
+                Book Demo
+              </a>
+            </div>
+            <ul class="trust">
+              <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                  <path d="M20 6L9 17l-5-5" stroke="#06B6D4" stroke-width="2.4" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg> 99.9% uptime</li>
+              <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                  <path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4z" stroke="#06B6D4" stroke-width="2"
+                    stroke-linejoin="round" />
+                </svg> Secure cloud platform</li>
+              <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                  <rect x="7" y="2" width="10" height="20" rx="2" stroke="#06B6D4" stroke-width="2" />
+                  <circle cx="12" cy="18" r="1" fill="#06B6D4" />
+                </svg> Mobile friendly</li>
+            </ul>
+          </div>
+
+          <div class="hero-mock reveal" id="heroMock">
+            <div class="mock-glow"></div>
+            <div class="mock-card glass">
+              <div class="mock-top">
+                <div class="mock-dots"><span></span><span></span><span></span></div>
+                <div class="mock-title">MotionHQ &middot; Overview</div>
+                <div class="mock-pill">Live</div>
+              </div>
+              <div class="mock-stats">
+                <div class="stat-card">
+                  <div class="stat-label">Total Members</div>
+                  <div class="stat-value">1,284</div>
+                  <div class="stat-trend up">+12.4%</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-label">Active Memberships</div>
+                  <div class="stat-value">1,021</div>
+                  <div class="stat-trend up">+6.8%</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-label">Revenue (MTD)</div>
+                  <div class="stat-value">₹8.42L</div>
+                  <div class="stat-trend up">+18.2%</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-label">Check-ins Today</div>
+                  <div class="stat-value">342</div>
+                  <div class="stat-trend up">+4.1%</div>
+                </div>
+              </div>
+              <div class="mock-chart">
+                <div class="chart-head">
+                  <div>
+                    <div class="chart-title">Revenue this month</div>
+                    <div class="chart-sub">₹8,42,500 &middot; +18.2% vs last month</div>
+                  </div>
+                  <div class="chart-legend">
+                    <span><i class="dot-p"></i> Revenue</span>
+                    <span><i class="dot-s"></i> Renewals</span>
+                  </div>
+                </div>
+                <svg class="line-chart" viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="area1" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.55" />
+                      <stop offset="1" stop-color="#7C3AED" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="area2" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0" stop-color="#06B6D4" stop-opacity="0.35" />
+                      <stop offset="1" stop-color="#06B6D4" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="line1" x1="0" x2="1" y1="0" y2="0">
+                      <stop offset="0" stop-color="#7C3AED" />
+                      <stop offset="1" stop-color="#06B6D4" />
+                    </linearGradient>
+                  </defs>
+                  <g stroke="rgba(255,255,255,.05)" stroke-width="1">
+                    <line x1="0" y1="40" x2="600" y2="40" />
+                    <line x1="0" y1="90" x2="600" y2="90" />
+                    <line x1="0" y1="140" x2="600" y2="140" />
+                    <line x1="0" y1="190" x2="600" y2="190" />
+                  </g>
+                  <path
+                    d="M0,150 C60,130 100,90 160,95 C220,100 260,60 320,55 C380,50 420,80 480,60 C540,40 580,30 600,25 L600,200 L0,200 Z"
+                    fill="url(#area1)" />
+                  <path
+                    d="M0,150 C60,130 100,90 160,95 C220,100 260,60 320,55 C380,50 420,80 480,60 C540,40 580,30 600,25"
+                    fill="none" stroke="url(#line1)" stroke-width="2.5" stroke-linecap="round" />
+                  <path
+                    d="M0,175 C60,170 100,160 160,150 C220,140 260,135 320,125 C380,115 420,120 480,110 C540,100 580,95 600,90 L600,200 L0,200 Z"
+                    fill="url(#area2)" />
+                  <path
+                    d="M0,175 C60,170 100,160 160,150 C220,140 260,135 320,125 C380,115 420,120 480,110 C540,100 580,95 600,90"
+                    fill="none" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" opacity=".8" />
+                </svg>
+              </div>
+              <div class="mock-foot">
+                <div class="ck-row">
+                  <div class="avatar">AR</div>
+                  <div class="ck-meta">
+                    <div>Aarav Reddy</div><span>Checked in &middot; 9:42 AM</span>
+                  </div>
+                  <div class="ck-badge ok">Active</div>
+                </div>
+                <div class="ck-row">
+                  <div class="avatar avt-2">PM</div>
+                  <div class="ck-meta">
+                    <div>Priya Mehta</div><span>Renewed &middot; Quarterly</span>
+                  </div>
+                  <div class="ck-badge new">Renewal</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGO STRIP -->
+    <section class="logos reveal">
+      <div class="container">
+        <p class="logos-label">Trusted by gyms and studios across India</p>
+        <div class="logos-row">
+          <span>IRONHOUSE</span><span>PULSE&nbsp;FIT</span><span>F45&nbsp;LITE</span><span>CROSSFORGE</span><span>ALPHA&nbsp;CLUB</span><span>FLEX&nbsp;LAB</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow eyebrow-warn"><span class="dot"></span> The old way</span>
+          <h2 class="h2">Gym Management <span class="gradient-text">Shouldn't Be This Hard</span></h2>
+          <p class="section-sub">If you're still running your gym on spreadsheets and sticky notes, you're leaving
+            members &mdash; and revenue &mdash; on the floor.</p>
+        </div>
+        <div class="grid grid-3 problems">
+          <div class="card reveal">
+            <div class="ico ico-warn">📋</div>
+            <h3>Tracking memberships manually</h3>
+            <p>Spreadsheets get messy fast. Plans, start dates, freezes &mdash; impossible to keep clean.</p>
+          </div>
+          <div class="card reveal">
+            <div class="ico ico-warn">⏰</div>
+            <h3>Missed renewals</h3>
+            <p>Every forgotten renewal is lost revenue and a member who quietly drifts away.</p>
+          </div>
+          <div class="card reveal">
+            <div class="ico ico-warn">🚪</div>
+            <h3>Attendance confusion</h3>
+            <p>No clear picture of who walked in today, this week, or who's gone quiet.</p>
+          </div>
+          <div class="card reveal">
+            <div class="ico ico-warn">💸</div>
+            <h3>Payment follow-ups</h3>
+            <p>Chasing dues over WhatsApp eats hours your team should spend on members.</p>
+          </div>
+          <div class="card reveal">
+            <div class="ico ico-warn">📉</div>
+            <h3>No business visibility</h3>
+            <p>You're flying blind on revenue, retention, and which plans actually convert.</p>
+          </div>
+          <div class="card reveal card-accent">
+            <div class="ico ico-ok">✨</div>
+            <h3>There's a better way</h3>
+            <p>MotionHQ replaces the chaos with one clean dashboard your whole team can use.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="dot"></span> Features</span>
+          <h2 class="h2">Everything You Need <span class="gradient-text">To Grow Your Gym</span></h2>
+          <p class="section-sub">Ten powerful modules &mdash; one unified platform built for fitness businesses.</p>
+        </div>
+        <div class="grid grid-3 features">
+          <div class="card feature reveal">
+            <div class="f-ico"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M16 11a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z" stroke="currentColor" stroke-width="1.8" />
+                <path d="M4 21a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg></div>
+            <h3>Member Management</h3>
+            <p>Store profiles, plans, documents, and full member history in one place.</p>
+          </div>
+          <div class="card feature reveal">
+            <div class="f-ico"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg></div>
+            <h3>Attendance Tracking</h3>
+            <p>Real-time check-ins via QR, biometric, or app &mdash; with full history.</p>
+          </div>
+          <div class="card feature reveal">
+            <div class="f-ico"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M3 7h18v12H3z" stroke="currentColor" stroke-width="1.8" />
+                <path d="M3 11h18" stroke="currentColor" stroke-width="1.8" />
+              </svg></div>
+            <h3>Membership Management</h3>
+            <p>Manage renewals, freezes, and subscriptions effortlessly.</p>
+          </div>
+          <div class="card feature reveal">
+            <div class="f-ico"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M3 6h18v12H3z" stroke="currentColor" stroke-width="1.8" />
+                <path d="M7 14h4M15 14h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg></div>
+            <h3>Billing &amp; Payments</h3>
+            <p>Track payments, dues, invoices, and refunds with zero manual entry.</p>
+          </div>
+          <div class="card feature reveal">
+            <div class="f-ico"><svg viewBox="0 0 24 24" fill="none">
+                <circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.8" />
+                <path d="M3 20a6 6 0 0 1 12 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <circle cx="17" cy="10" r="2" stroke="currentColor" stroke-width="1.8" />
+                <path d="M15 20a4 4 0 0 1 8 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg></div>
+            <h3>Trainer Management</h3>
+            <p>Assign trainers, manage schedules, and track sessions per coach.</p>
+          </div>
+          <div class="card feature reveal">
+            <div class="f-ico"><svg viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8" />
+                <path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg></div>
+            <h3>Class Scheduling</h3>
+            <p>Organize group sessions, bookings, and waitlists from one calendar.</p>
+          </div>
+          <div class="card feature reveal">
+            <div class="f-ico"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 19V9M10 19V5M16 19v-7M22 19H2" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" />
+              </svg></div>
+            <h3>Reports &amp; Analytics</h3>
+            <p>Revenue, retention, attendance, and growth &mdash; visualized clearly.</p>
+          </div>
+          <div class="card feature reveal">
+            <div class="f-ico"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 20l1.5-4.5A8 8 0 1 1 9 19l-5 1z" stroke="currentColor" stroke-width="1.8"
+                  stroke-linejoin="round" />
+              </svg></div>
+            <h3>WhatsApp Notifications</h3>
+            <p>Automated reminders for renewals, dues, classes, and check-ins.</p>
+          </div>
+          <div class="card feature reveal">
+            <div class="f-ico"><svg viewBox="0 0 24 24" fill="none">
+                <rect x="6" y="2" width="12" height="20" rx="2.5" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="12" cy="18" r="1" fill="currentColor" />
+              </svg></div>
+            <h3>Member Mobile App</h3>
+            <p>Members view plans, attendance, bookings, and renew &mdash; from their phone.</p>
+          </div>
+          <div class="card feature reveal">
+            <div class="f-ico"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3l9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V7l9-4z" stroke="currentColor" stroke-width="1.8"
+                  stroke-linejoin="round" />
+                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg></div>
+            <h3>White Label Branding</h3>
+            <p>Ship a fully branded mobile and member experience under your gym.</p>
+          </div>
+          <div class="card feature reveal feature-cta">
+            <div class="f-ico"><svg viewBox="0 0 24 24" fill="none">
+                <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="currentColor" />
+              </svg></div>
+            <h3>And much more</h3>
+            <p>Lead capture, multi-branch, role permissions, exports, integrations &mdash; we ship fast.</p>
+            <a href="#cta" class="link-arrow">Explore all features <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD SHOWCASE -->
+    <section class="section" id="dashboard">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="dot"></span> Dashboard</span>
+          <h2 class="h2">See Your Gym <span class="gradient-text">At A Glance</span></h2>
+          <p class="section-sub">Every number that matters &mdash; revenue, retention, attendance &mdash; in one
+            beautiful command center.</p>
+        </div>
+
+        <div class="dash-wrap reveal">
+          <div class="dash-glow"></div>
+          <div class="dash glass">
+            <div class="dash-side">
+              <div class="brand small">
+                <span class="brand-mark sm"><svg viewBox="0 0 32 32">
+                    <rect x="2" y="2" width="28" height="28" rx="8" fill="url(#bg1)" />
+                    <path d="M8 22V10l4 6 4-6 4 6 4-6v12" stroke="white" stroke-width="2.2" fill="none"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></span>
+                <span class="brand-name sm">MotionHQ</span>
+              </div>
+              <nav class="side-nav">
+                <a class="active"><i>◎</i> Overview</a>
+                <a><i>○</i> Members</a>
+                <a><i>○</i> Attendance</a>
+                <a><i>○</i> Billing</a>
+                <a><i>○</i> Classes</a>
+                <a><i>○</i> Trainers</a>
+                <a><i>○</i> Reports</a>
+              </nav>
+            </div>
+            <div class="dash-main">
+              <div class="dash-head">
+                <div>
+                  <h4>Good morning, Rohan 👋</h4>
+                  <span>Here's how Ironhouse Andheri is doing today.</span>
+                </div>
+                <div class="dash-search">Search members, plans…</div>
+              </div>
+
+              <div class="dash-stats">
+                <div class="ds"><span>Active Members</span><b data-count="1021">0</b><i class="up">+6.8%</i></div>
+                <div class="ds"><span>Revenue (MTD)</span><b>₹8.42L</b><i class="up">+18.2%</i></div>
+                <div class="ds"><span>Check-ins</span><b data-count="342">0</b><i class="up">+4.1%</i></div>
+                <div class="ds"><span>Retention</span><b>92%</b><i class="up">+2.4%</i></div>
+              </div>
+
+              <div class="dash-grid">
+                <div class="dash-card big">
+                  <div class="chart-head">
+                    <div>
+                      <div class="chart-title">Membership growth</div>
+                      <div class="chart-sub">Last 6 months</div>
+                    </div>
+                    <div class="chart-legend"><span><i class="dot-p"></i> New</span><span><i class="dot-s"></i>
+                        Renewed</span></div>
+                  </div>
+                  <svg class="bars" viewBox="0 0 600 220" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="bp" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0" stop-color="#7C3AED" />
+                        <stop offset="1" stop-color="#7C3AED" stop-opacity=".3" />
+                      </linearGradient>
+                      <linearGradient id="bs" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0" stop-color="#06B6D4" />
+                        <stop offset="1" stop-color="#06B6D4" stop-opacity=".3" />
+                      </linearGradient>
+                    </defs>
+                    <g>
+                      <rect x="30" y="120" width="28" height="80" rx="6" fill="url(#bp)" />
+                      <rect x="62" y="140" width="28" height="60" rx="6" fill="url(#bs)" />
+                      <rect x="120" y="100" width="28" height="100" rx="6" fill="url(#bp)" />
+                      <rect x="152" y="130" width="28" height="70" rx="6" fill="url(#bs)" />
+                      <rect x="210" y="80" width="28" height="120" rx="6" fill="url(#bp)" />
+                      <rect x="242" y="110" width="28" height="90" rx="6" fill="url(#bs)" />
+                      <rect x="300" y="60" width="28" height="140" rx="6" fill="url(#bp)" />
+                      <rect x="332" y="95" width="28" height="105" rx="6" fill="url(#bs)" />
+                      <rect x="390" y="50" width="28" height="150" rx="6" fill="url(#bp)" />
+                      <rect x="422" y="80" width="28" height="120" rx="6" fill="url(#bs)" />
+                      <rect x="480" y="30" width="28" height="170" rx="6" fill="url(#bp)" />
+                      <rect x="512" y="65" width="28" height="135" rx="6" fill="url(#bs)" />
+                    </g>
+                    <g fill="#9CA3AF" font-size="11" font-family="Inter">
+                      <text x="46" y="215">Jun</text><text x="136" y="215">Jul</text><text x="226" y="215">Aug</text>
+                      <text x="316" y="215">Sep</text><text x="406" y="215">Oct</text><text x="496" y="215">Nov</text>
+                    </g>
+                  </svg>
+                </div>
+
+                <div class="dash-card">
+                  <div class="chart-title">Attendance today</div>
+                  <div class="donut-wrap">
+                    <svg viewBox="0 0 120 120" class="donut">
+                      <circle cx="60" cy="60" r="46" stroke="rgba(255,255,255,.07)" stroke-width="14" fill="none" />
+                      <circle cx="60" cy="60" r="46" stroke="url(#line1)" stroke-width="14" fill="none"
+                        stroke-dasharray="289" stroke-dashoffset="72" stroke-linecap="round"
+                        transform="rotate(-90 60 60)" />
+                    </svg>
+                    <div class="donut-center"><b>75%</b><span>of expected</span></div>
+                  </div>
+                  <div class="legend-rows">
+                    <div><i class="dot-p"></i> Members <b>342</b></div>
+                    <div><i class="dot-s"></i> Guests <b>18</b></div>
+                  </div>
+                </div>
+
+                <div class="dash-card span-2">
+                  <div class="chart-head">
+                    <div class="chart-title">Recent check-ins</div>
+                    <a class="link-muted small">View all</a>
+                  </div>
+                  <div class="ck-list">
+                    <div class="ck-row">
+                      <div class="avatar">AR</div>
+                      <div class="ck-meta">
+                        <div>Aarav Reddy</div><span>Quarterly · Strength</span>
+                      </div>
+                      <div class="ck-time">9:42 AM</div>
+                      <div class="ck-badge ok">Active</div>
+                    </div>
+                    <div class="ck-row">
+                      <div class="avatar avt-2">PM</div>
+                      <div class="ck-meta">
+                        <div>Priya Mehta</div><span>Annual · CrossFit</span>
+                      </div>
+                      <div class="ck-time">9:38 AM</div>
+                      <div class="ck-badge new">Renewal</div>
+                    </div>
+                    <div class="ck-row">
+                      <div class="avatar avt-3">SK</div>
+                      <div class="ck-meta">
+                        <div>Siddharth Kapoor</div><span>Monthly · Cardio</span>
+                      </div>
+                      <div class="ck-time">9:21 AM</div>
+                      <div class="ck-badge warn">Due</div>
+                    </div>
+                    <div class="ck-row">
+                      <div class="avatar avt-4">NV</div>
+                      <div class="ck-meta">
+                        <div>Neha Verma</div><span>Quarterly · Yoga</span>
+                      </div>
+                      <div class="ck-time">9:14 AM</div>
+                      <div class="ck-badge ok">Active</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="section" id="benefits">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="dot"></span> Benefits</span>
+          <h2 class="h2">Why Gym Owners <span class="gradient-text">Choose MotionHQ</span></h2>
+          <p class="section-sub">Real outcomes, measured by gyms running on MotionHQ.</p>
+        </div>
+        <div class="grid grid-5 benefits">
+          <div class="card stat reveal">
+            <div class="big-num"><span data-count="12">0</span>+ hrs</div>
+            <p>Saved every week per branch.</p>
+          </div>
+          <div class="card stat reveal">
+            <div class="big-num"><span data-count="38">0</span>%</div>
+            <p>Fewer missed renewals.</p>
+          </div>
+          <div class="card stat reveal">
+            <div class="big-num"><span data-count="27">0</span>%</div>
+            <p>Higher member retention.</p>
+          </div>
+          <div class="card stat reveal">
+            <div class="big-num"><span data-count="3">0</span>×</div>
+            <p>More productive staff.</p>
+          </div>
+          <div class="card stat reveal">
+            <div class="big-num"><span data-count="100">0</span>%</div>
+            <p>Data-driven decisions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="dot"></span> Pricing</span>
+          <h2 class="h2"><span class="gradient-text">Simple Pricing</span></h2>
+          <p class="section-sub">Pick a plan that fits today. Upgrade as you grow &mdash; no surprises.</p>
+        </div>
+        <div class="grid grid-3 pricing">
+          <div class="card price reveal">
+            <div class="price-name">Starter</div>
+            <div class="price-amt">₹999<span>/month</span></div>
+            <p class="price-desc">For small gyms getting organized.</p>
+            <ul class="price-list">
+              <li>Up to 100 members</li>
+              <li>Attendance tracking</li>
+              <li>Billing</li>
+              <li>Basic reports</li>
+            </ul>
+            <a href="#cta" class="btn btn-ghost btn-block">Start Free Trial</a>
+          </div>
+          <div class="card price popular reveal">
+            <span class="pop-tag">Most Popular</span>
+            <div class="price-name">Growth</div>
+            <div class="price-amt">₹2,499<span>/month</span></div>
+            <p class="price-desc">For growing gyms and studios.</p>
+            <ul class="price-list">
+              <li>Up to 500 members</li>
+              <li>Advanced analytics</li>
+              <li>WhatsApp automation</li>
+              <li>Trainer management</li>
+              <li>Class scheduling</li>
+            </ul>
+            <a href="#cta" class="btn btn-primary btn-block">Start Free Trial</a>
+          </div>
+          <div class="card price reveal">
+            <div class="price-name">Pro</div>
+            <div class="price-amt">Custom<span>&nbsp;</span></div>
+            <p class="price-desc">For chains and enterprise.</p>
+            <ul class="price-list">
+              <li>Unlimited members</li>
+              <li>White-label solution</li>
+              <li>Priority support</li>
+              <li>Multi-branch management</li>
+            </ul>
+            <a href="#cta" class="btn btn-ghost btn-block">Talk to Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="dot"></span> Loved by gym owners</span>
+          <h2 class="h2">Real Owners. <span class="gradient-text">Real Results.</span></h2>
+        </div>
+        <div class="grid grid-3 reviews">
+          <div class="card review reveal">
+            <div class="stars">★★★★★</div>
+            <p>"We replaced three tools and a spreadsheet with MotionHQ. Renewals went up 32% in the first quarter and
+              my front desk finally has time for members."</p>
+            <div class="r-author">
+              <div class="avatar">RK</div>
+              <div><b>Rohan Khanna</b><span>Owner · Ironhouse Andheri</span></div>
+            </div>
+          </div>
+          <div class="card review reveal">
+            <div class="stars">★★★★★</div>
+            <p>"The WhatsApp automation alone pays for the platform. Members renew themselves now. Our staff loves how
+              clean it is."</p>
+            <div class="r-author">
+              <div class="avatar avt-2">AS</div>
+              <div><b>Ananya Shetty</b><span>Founder · Pulse Fit Studio</span></div>
+            </div>
+          </div>
+          <div class="card review reveal">
+            <div class="stars">★★★★★</div>
+            <p>"Managing three branches used to be chaos. With MotionHQ I see every metric across locations in one
+              screen. It's a different business now."</p>
+            <div class="r-author">
+              <div class="avatar avt-3">VS</div>
+              <div><b>Vikram Singh</b><span>Director · CrossForge Chain</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="dot"></span> FAQ</span>
+          <h2 class="h2">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>How long does setup take?<span class="chev">+</span></summary>
+            <p>Most gyms are live within 24–48 hours. Our onboarding team imports your members, plans, and historical
+              data for you &mdash; you don't lift a finger.</p>
+          </details>
+          <details>
+            <summary>Is there a mobile app?<span class="chev">+</span></summary>
+            <p>Yes. Members get a polished mobile app to view plans, attendance, bookings, and renewals. Staff get a
+              check-in app for the front desk.</p>
+          </details>
+          <details>
+            <summary>Can I manage multiple branches?<span class="chev">+</span></summary>
+            <p>Absolutely. The Pro plan includes multi-branch management with per-branch staff roles and a roll-up
+              dashboard across locations.</p>
+          </details>
+          <details>
+            <summary>Is my data secure?<span class="chev">+</span></summary>
+            <p>Yes. MotionHQ runs on enterprise-grade cloud infrastructure with encryption at rest and in transit, daily
+              backups, and role-based access control.</p>
+          </details>
+          <details>
+            <summary>Do you offer support?<span class="chev">+</span></summary>
+            <p>Every plan includes email and chat support. Growth and Pro plans get priority support with a dedicated
+              success manager.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section" id="cta">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div class="cta-glow"></div>
+          <h2 class="h2">Ready To <span class="gradient-text">Modernize Your Gym?</span></h2>
+          <p class="lead">Join gym owners who are simplifying operations and growing faster with MotionHQ.</p>
+          <div class="hero-ctas center">
+            <a href="#" class="btn btn-primary">Start Free Trial</a>
+            <a href="#" class="btn btn-ghost">Schedule Demo</a>
+          </div>
+          <p class="fine">No credit card required &middot; 14-day free trial &middot; Cancel anytime</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="foot-brand">
+        <a href="#top" class="brand">
+          <span class="brand-mark"><svg viewBox="0 0 32 32">
+              <rect x="2" y="2" width="28" height="28" rx="8" fill="url(#bg1)" />
+              <path d="M8 22V10l4 6 4-6 4 6 4-6v12" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span>
+          <span class="brand-name">MotionHQ</span>
+        </a>
+        <p>The all-in-one platform built for modern gyms, studios, and fitness chains.</p>
+        <div class="socials">
+          <a aria-label="LinkedIn" href="#"><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-1 1.9-2 3.9-2 4.2 0 5 2.7 5 6.2V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V21h-4z" />
+            </svg></a>
+          <a aria-label="Instagram" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+            </svg></a>
+          <a aria-label="Facebook" href="#"><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M13 22v-8h3l1-4h-4V7.5c0-1.1.3-1.9 2-1.9h2V2.1C16.6 2 15.5 2 14.4 2 11.9 2 10 3.5 10 6.7V10H7v4h3v8z" />
+            </svg></a>
+        </div>
+      </div>
+      <div class="foot-cols">
+        <div>
+          <h5>Product</h5>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#dashboard">Dashboard</a>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Careers</a>
+        </div>
+        <div>
+          <h5>Legal</h5>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <div class="container foot-bottom">
+      <span>© 2026 MotionHQ. All rights reserved.</span>
+      <span>Made for modern fitness businesses.</span>
+    </div>
+  </footer>
+
+  <!-- shared svg defs reused across mockups -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="bg1-global" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0" stop-color="#7C3AED" />
+        <stop offset="1" stop-color="#06B6D4" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
