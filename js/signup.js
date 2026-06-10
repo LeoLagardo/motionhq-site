@@ -1,5 +1,10 @@
-const API_BASE_URL = 'https://motionhq-server.onrender.com/api';
-const ADMIN_URL = 'https://motionhq-7afmcn4uy-leolagardos-projects.vercel.app';
+const API_BASE_URL = 'https://api.motionhq.site/api';
+const ADMIN_URL = 'https://admin.motionhq.site';
+
+// const API_BASE_URL = 'http://localhost:8000/api';
+// const ADMIN_URL = 'http://localhost:4200';
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // Form submission handler
     const signupForm = document.getElementById('signupForm');

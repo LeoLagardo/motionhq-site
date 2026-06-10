@@ -132,14 +132,10 @@
   document.querySelectorAll('[data-year]').forEach((n) => (n.textContent = year));
 })();
 
-const ADMIN_URL = 'https://motionhq-7afmcn4uy-leolagardos-projects.vercel.app';
-const SITE_URL = 'https://leolagardo.github.io/motionhq-site';
+const ADMIN_URL = 'https://admin.motionhq.site';
+// const ADMIN_URL = 'http://localhost:4200';
 
 function redirectToLogin() {
   window.location.href = ADMIN_URL + "/login";
 
-}
-
-function redirectToSignup() {
-  window.location.href = SITE_URL + "/signup.html";
 }
